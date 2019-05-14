@@ -22,6 +22,7 @@ $background-opacity: 0.7;
         right: 0;
         width: 100%;
         height: 100%;
+        min-height: 515px; // bag fix on wide screens
         z-index: -1;
         background: rgba($primary-color, $background-opacity);
       }
@@ -59,6 +60,12 @@ $background-opacity: 0.7;
 
 @mixin mediaXL {
   @media screen and (min-width: 1171px) {
+    @content;
+  }
+}
+
+@mixin mediaWd {
+  @media screen and (max-height: 600px) {
     @content;
   }
 }
