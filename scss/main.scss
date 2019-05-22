@@ -5,6 +5,10 @@
   box-sizing: border-box;
 }
 
+.off {
+  display: none;
+}
+
 body {
   @include background;
   background: $primary-color;
@@ -72,10 +76,6 @@ main {
       margin-top: 20vh;
     }
   }
-
-  &.off {
-    display: none;
-  }
 }
 
 .about-info {
@@ -114,6 +114,14 @@ main {
     background: lighten($primary-color, 5);
     padding: 0.5rem;
     border-bottom: $secondary-color 5px solid;
+  }
+
+  ul {
+    padding-left: 1rem;
+
+    li {
+      margin-bottom: 0.5rem;
+    }
   }
 }
 
