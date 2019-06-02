@@ -5,7 +5,7 @@ const menuNav = document.querySelector(".menu-nav");
 const menuBranding = document.querySelector(".menu-branding");
 const navItems = document.querySelectorAll(".nav-item");
 const main = document.querySelector("main");
-const mainFooter = document.querySelector("#main-footer");
+const mainFooter = document.querySelector("footer");
 
 // Set Initial State Of Menu
 let showMenu = false;
