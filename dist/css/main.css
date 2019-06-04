@@ -136,7 +136,8 @@ h3 {
 
 a {
   color: #fff;
-  text-decoration: none; }
+  text-decoration: none;
+  outline: none; }
 
 header {
   position: fixed;
