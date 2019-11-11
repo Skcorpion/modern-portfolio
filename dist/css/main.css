@@ -4,13 +4,13 @@
   right: 35px;
   top: 35px;
   cursor: pointer;
-  transition: all 0.6s ease-out; }
+  transition: all 0.5s ease-out; }
   .menu-btn .btn-line {
     width: 28px;
     height: 3px;
     margin: 0 0 5px 0;
     background: #fff;
-    transition: all 0.6s ease-out; }
+    transition: all 0.5s ease-out; }
   .menu-btn.close {
     transform: rotate(180deg); }
     .menu-btn.close .btn-line:nth-child(1) {
@@ -43,13 +43,13 @@
     background: #3763cf;
     list-style: none;
     transform: translate3d(0, -100%, 0);
-    transition: all 0.6s ease-out; }
+    transition: all 0.5s ease-out; }
     .menu-nav.show {
       transform: translate3d(0, 0, 0); }
   .menu-branding {
     background: #4c73d4;
     transform: translate3d(0, 100%, 0);
-    transition: all 0.6s ease-out; }
+    transition: all 0.5s ease-out; }
     .menu-branding.show {
       transform: translate3d(0, 0, 0); }
     .menu-branding .portrait {
@@ -60,7 +60,7 @@
       border: solid 3px #ffd618; }
   .menu .nav-item {
     transform: translate3d(600px, 0, 0);
-    transition: all 0.6s ease-out; }
+    transition: all 0.5s ease-out; }
     .menu .nav-item.show {
       transform: translate3d(0, 0, 0); }
     .menu .nav-item.current > a {
@@ -74,7 +74,7 @@
     font-weight: 300;
     color: #fff;
     text-decoration: none;
-    transition: all 0.6s ease-out; }
+    transition: all 0.5s ease-out; }
     .menu .nav-link:hover {
       color: #ffd618; }
 
@@ -156,7 +156,7 @@ main {
       padding: 0.4rem; }
       main .icons a:hover {
         color: #ffd618;
-        transition: all 0.6s ease-out; }
+        transition: all 0.5s ease-out; }
   main#home {
     overflow: hidden; }
     main#home h1 {
@@ -200,7 +200,7 @@ main {
     .projects img:hover {
       opacity: 0.5;
       border-color: #ffd618;
-      transition: all 0.6s ease-out; }
+      transition: all 0.5s ease-out; }
 
 .boxes {
   display: flex;
@@ -214,13 +214,13 @@ main {
     padding: 1rem 1.8rem;
     margin-bottom: 1rem;
     margin-right: 1rem;
-    transition: all 0.6s ease-out; }
+    transition: all 0.5s ease-out; }
     .boxes div:hover {
       padding: 0.5rem 1.5rem;
       background: #ffd618;
-      color: #fff; }
+      color: #000; }
       .boxes div:hover span {
-        color: #fff; }
+        color: #000; }
 
 .btn, .btn-dark, .btn-light {
   display: block;
