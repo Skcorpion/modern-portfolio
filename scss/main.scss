@@ -5,10 +5,6 @@
   box-sizing: border-box;
 }
 
-.off {
-  display: none;
-}
-
 body {
   @include background;
   background: $primary-color;
