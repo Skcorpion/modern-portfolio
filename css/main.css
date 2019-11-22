@@ -40,14 +40,14 @@
   .menu-nav {
     margin: 0;
     padding: 0;
-    background: #2a3a46;
+    background: #3763cf;
     list-style: none;
     transform: translate3d(0, -100%, 0);
     transition: all 0.5s ease-out; }
     .menu-nav.show {
       transform: translate3d(0, 0, 0); }
   .menu-branding {
-    background: #344756;
+    background: #4c73d4;
     transform: translate3d(0, 100%, 0);
     transition: all 0.5s ease-out; }
     .menu-branding.show {
@@ -57,14 +57,14 @@
       height: 250px;
       background: url("../img/portrait.jpg");
       border-radius: 50%;
-      border: solid 3px #009fb7; }
+      border: solid 3px #ffd618; }
   .menu .nav-item {
     transform: translate3d(600px, 0, 0);
     transition: all 0.5s ease-out; }
     .menu .nav-item.show {
       transform: translate3d(0, 0, 0); }
     .menu .nav-item.current > a {
-      color: #009fb7; }
+      color: #ffd618; }
   .menu .nav-link {
     display: inline-block;
     position: relative;
@@ -76,7 +76,7 @@
     text-decoration: none;
     transition: all 0.5s ease-out; }
     .menu .nav-link:hover {
-      color: #009fb7; }
+      color: #ffd618; }
 
 .nav-item:nth-child(1) {
   transition-delay: 0.1s; }
@@ -93,8 +93,11 @@
 * {
   box-sizing: border-box; }
 
+.off {
+  display: none; }
+
 body {
-  background: #344756;
+  background: #4c73d4;
   color: #fff;
   height: 100%;
   margin: 0;
@@ -113,7 +116,7 @@ body {
       height: 100%;
       min-height: 515px;
       z-index: -1;
-      background: rgba(52, 71, 86, 0.7); }
+      background: rgba(76, 115, 212, 0.7); }
 
 h1,
 h2,
@@ -129,11 +132,12 @@ h3 {
   h3.sm-heading {
     margin-bottom: 2rem;
     padding: 0.2rem 1rem;
-    background: rgba(56, 76, 92, 0.5); }
+    background: rgba(84, 121, 214, 0.5); }
 
 a {
   color: #fff;
-  text-decoration: none; }
+  text-decoration: none;
+  outline: none; }
 
 header {
   position: fixed;
@@ -141,7 +145,7 @@ header {
   width: 100%; }
 
 .text-secondary {
-  color: #009fb7; }
+  color: #ffd618; }
 
 main {
   padding: 4rem;
@@ -151,14 +155,12 @@ main {
     main .icons a {
       padding: 0.4rem; }
       main .icons a:hover {
-        color: #009fb7;
+        color: #ffd618;
         transition: all 0.5s ease-out; }
   main#home {
     overflow: hidden; }
     main#home h1 {
       margin-top: 20vh; }
-  main.off {
-    display: none; }
 
 .about-info {
   display: grid;
@@ -169,7 +171,7 @@ main {
     grid-area: bioimage;
     margin: auto;
     border-radius: 50%;
-    border: #009fb7 3px solid; }
+    border: #ffd618 3px solid; }
   .about-info .bio {
     grid-area: bio;
     font-size: 1.5rem; }
@@ -180,21 +182,57 @@ main {
   .about-info .job-3 {
     grid-area: job3; }
   .about-info .job {
-    background: #3e5466;
-    padding: 0.5rem;
-    border-bottom: #009fb7 5px solid; }
+    background: #6183d9;
+    padding: 1rem;
+    border-bottom: #ffd618 5px solid; }
+  .about-info ul {
+    padding-left: 1.5rem; }
+    .about-info ul li {
+      margin-bottom: 0.5rem; }
 
 .projects {
   display: grid;
   grid-gap: 0.7rem;
   grid-template-columns: repeat(3, 1fr); }
+  .projects .img-wrapper {
+    position: relative; }
   .projects img {
     width: 100%;
     border: 3px #fff solid; }
     .projects img:hover {
       opacity: 0.5;
-      border-color: #009fb7;
+      border-color: #ffd618;
       transition: all 0.5s ease-out; }
+  .projects .tags {
+    position: absolute;
+    bottom: 14px;
+    left: 8px;
+    display: flex;
+    flex-flow: row wrap-reverse; }
+    .projects .tags .tag {
+      display: inline-block;
+      margin: 6px 6px 0px 0px;
+      font-size: 13px;
+      padding: 0 0.25em 0.1em;
+      border-radius: 5px;
+      border: solid 2px transparent;
+      line-height: 1.2; }
+      .projects .tags .tag.scss-color {
+        background-color: #bf4080; }
+      .projects .tags .tag.animation-color {
+        background-color: #8984f7; }
+      .projects .tags .tag.js-color {
+        background-color: #e9ca32; }
+      .projects .tags .tag.responsive-color {
+        background-color: #2889e4; }
+      .projects .tags .tag.bootstrap-color {
+        background-color: #563b7e; }
+      .projects .tags .tag.mobile-color {
+        background-color: #0ed0d6; }
+      .projects .tags .tag.jquery-color {
+        background-color: #1b75bb; }
+      .projects .tags .tag.grid-color {
+        background-color: #ec4e1f; }
 
 .boxes {
   display: flex;
@@ -211,10 +249,10 @@ main {
     transition: all 0.5s ease-out; }
     .boxes div:hover {
       padding: 0.5rem 1.5rem;
-      background: #009fb7;
-      color: #fff; }
+      background: #ffd618;
+      color: #000; }
       .boxes div:hover span {
-        color: #fff; }
+        color: #000; }
 
 .btn, .btn-dark, .btn-light {
   display: block;
@@ -222,21 +260,21 @@ main {
   border: 0;
   margin-bottom: 0.3rem; }
   .btn:hover, .btn-dark:hover, .btn-light:hover {
-    background: #009fb7;
+    background: #ffd618;
     color: #fff; }
 
 .btn-dark {
-  background: black;
+  background: #060c1b;
   color: #fff; }
 
 .btn-light {
-  background: #b6c6d3;
+  background: white;
   color: #333; }
 
 #main-footer {
   text-align: center;
   padding: 1rem;
-  background: #212d36;
+  background: #2e58bf;
   color: #fff;
   height: 60px; }
 
@@ -277,6 +315,9 @@ main {
   .about-info {
     grid-template-areas: "bioimage" "bio" "job1" "job2" "job3";
     grid-template-columns: 1fr; }
+    .about-info ul {
+      text-align: left;
+      padding-left: 1.5rem; }
   .projects {
     grid-template-columns: repeat(2, 1fr); } }
 
