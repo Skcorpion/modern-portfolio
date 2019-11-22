@@ -132,6 +132,10 @@ main {
   grid-gap: 0.7rem;
   grid-template-columns: repeat(3, 1fr);
 
+  .img-wrapper {
+    position: relative;
+  }
+
   img {
     width: 100%;
     border: 3px #fff solid;
@@ -140,6 +144,56 @@ main {
       opacity: 0.5;
       border-color: $secondary-color;
       @include easeOut;
+    }
+  }
+
+  .tags {
+    position: absolute;
+    bottom: 14px;
+    left: 8px;
+    display: flex;
+    flex-flow: row wrap-reverse;
+
+    .tag {
+      display: inline-block;
+      margin: 6px 6px 0px 0px;
+      font-size: 13px;
+      padding: 0 0.25em 0.1em;
+      border-radius: 5px;
+      border: solid 2px transparent;
+      line-height: 1.2;
+
+      &.scss-color {
+        background-color: $scss-color;
+      }
+
+      &.animation-color {
+        background-color: $animation-color;
+      }
+
+      &.js-color {
+        background-color: $js-color;
+      }
+
+      &.responsive-color {
+        background-color: $responsive-color;
+      }
+
+      &.bootstrap-color {
+        background-color: $bootstrap-color;
+      }
+
+      &.mobile-color {
+        background-color: $mobile-color;
+      }
+
+      &.jquery-color {
+        background-color: $jquery-color;
+      }
+
+      &.grid-color {
+        background-color: $grid-color;
+      }
     }
   }
 }

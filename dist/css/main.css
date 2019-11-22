@@ -194,6 +194,8 @@ main {
   display: grid;
   grid-gap: 0.7rem;
   grid-template-columns: repeat(3, 1fr); }
+  .projects .img-wrapper {
+    position: relative; }
   .projects img {
     width: 100%;
     border: 3px #fff solid; }
@@ -201,6 +203,36 @@ main {
       opacity: 0.5;
       border-color: #ffd618;
       transition: all 0.5s ease-out; }
+  .projects .tags {
+    position: absolute;
+    bottom: 14px;
+    left: 8px;
+    display: flex;
+    flex-flow: row wrap-reverse; }
+    .projects .tags .tag {
+      display: inline-block;
+      margin: 6px 6px 0px 0px;
+      font-size: 13px;
+      padding: 0 0.25em 0.1em;
+      border-radius: 5px;
+      border: solid 2px transparent;
+      line-height: 1.2; }
+      .projects .tags .tag.scss-color {
+        background-color: #bf4080; }
+      .projects .tags .tag.animation-color {
+        background-color: #8984f7; }
+      .projects .tags .tag.js-color {
+        background-color: #e9ca32; }
+      .projects .tags .tag.responsive-color {
+        background-color: #2889e4; }
+      .projects .tags .tag.bootstrap-color {
+        background-color: #563b7e; }
+      .projects .tags .tag.mobile-color {
+        background-color: #0ed0d6; }
+      .projects .tags .tag.jquery-color {
+        background-color: #1b75bb; }
+      .projects .tags .tag.grid-color {
+        background-color: #ec4e1f; }
 
 .boxes {
   display: flex;

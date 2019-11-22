@@ -1,0 +1,20 @@
+.tags .tag {
+    display: inline-block;
+    vertical-align: top;
+    margin-right: 8px;
+    font-size: 13px;
+    line-height: 15px;
+    padding: 0.25em 0.6em;
+    border-radius: 5px;
+    border: solid 2px rgba(255,255,255,0.2);
+    color: rgba(255,255,255,0.5);
+    -webkit-transition: border-color 0.15s,color 0.15s;
+    -moz-transition: border-color 0.15s,color 0.15s;
+    -ms-transition: border-color 0.15s,color 0.15s;
+    transition: border-color 0.15s,color 0.15s;
+}
+
+<div class="tags">
+    <div class="tag" itemprop="genre">Пригоди</div>
+    <div class="tag" itemprop="genre">Фантастика</div>
+</div>
