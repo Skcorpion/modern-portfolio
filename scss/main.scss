@@ -27,7 +27,7 @@ h3 {
   }
 
   &.sm-heading {
-    margin-bottom: 2rem;
+    margin-bottom: 1.5rem;
     padding: 0.2rem 1rem;
     background: rgba(lighten($primary-color, 2), 0.5);
   }
@@ -61,7 +61,7 @@ main {
   min-height: calc(100vh - 60px);
 
   .icons {
-    margin-top: 1rem;
+    // margin-top: 1rem; ?
 
     a {
       padding: 0.4rem;
@@ -196,6 +196,10 @@ main {
 
       &.grid-color {
         background-color: $grid-color;
+      }
+
+      &.gulp-color {
+        background-color: $gulp-color;
       }
     }
   }

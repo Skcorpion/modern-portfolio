@@ -127,7 +127,7 @@ h3 {
   h1.sm-heading,
   h2.sm-heading,
   h3.sm-heading {
-    margin-bottom: 2rem;
+    margin-bottom: 1.5rem;
     padding: 0.2rem 1rem;
     background: rgba(84, 121, 214, 0.5); }
 
@@ -151,13 +151,11 @@ header {
 main {
   padding: 4rem;
   min-height: calc(100vh - 60px); }
-  main .icons {
-    margin-top: 1rem; }
-    main .icons a {
-      padding: 0.4rem; }
-      main .icons a:hover {
-        color: #ffd618;
-        transition: all 0.5s ease-out; }
+  main .icons a {
+    padding: 0.4rem; }
+    main .icons a:hover {
+      color: #ffd618;
+      transition: all 0.5s ease-out; }
   main#home {
     overflow: hidden; }
     main#home h1 {
@@ -235,6 +233,8 @@ main {
         background-color: #1b75bb; }
       .projects .tags .tag.grid-color {
         background-color: #ec4e1f; }
+      .projects .tags .tag.gulp-color {
+        background-color: #e54849; }
 
 .boxes {
   display: flex;
