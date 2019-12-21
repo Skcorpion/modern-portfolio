@@ -26,6 +26,7 @@ $gulp-color: #e54849;
       background: $home-image;
       background-attachment: fixed;
       background-size: cover;
+      background-repeat: no-repeat;
       //sudo-element (don't need to create div.overlay in a top of the body#bg-img)
       &:after {
         content: ""; //always must inlude 'content' property
@@ -34,7 +35,7 @@ $gulp-color: #e54849;
         right: 0;
         width: 100%;
         height: 100%;
-        min-height: 515px; // bag fix on wide screens
+        // min-height: 515px; // bag fix on wide screens
         z-index: -1;
         background: rgba($primary-color, $background-opacity);
       }
@@ -72,6 +73,12 @@ $gulp-color: #e54849;
 
 @mixin mediaXL {
   @media screen and (min-width: 1171px) {
+    @content;
+  }
+}
+
+@mixin mediaWdMd {
+  @media screen and (max-height: 600px) and (max-width: 768px) {
     @content;
   }
 }
