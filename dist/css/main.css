@@ -1,8 +1,8 @@
 .menu-btn {
   position: absolute;
   z-index: 3;
-  right: 25px;
-  top: 25px;
+  right: 17px;
+  top: 17px;
   cursor: pointer;
   transition: all 0.5s ease-out; }
   .menu-btn .btn-line {
@@ -141,7 +141,7 @@ header {
   z-index: 2;
   width: 100%; }
   header .header-overlay {
-    height: 70px;
+    height: 55px;
     background: #3763cf;
     opacity: -0.3; }
 
