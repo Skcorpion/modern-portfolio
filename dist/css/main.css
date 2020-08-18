@@ -98,7 +98,7 @@ body {
   color: #fff;
   height: 100%;
   margin: 0;
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   line-height: 1.5; }
   body#bg-img {
     background: url(../img/background.jpg);
@@ -106,7 +106,7 @@ body {
     background-size: cover;
     background-repeat: no-repeat; }
     body#bg-img:after {
-      content: "";
+      content: '';
       position: absolute;
       top: 0;
       right: 0;
@@ -164,7 +164,7 @@ main {
 .about-info {
   display: grid;
   grid-gap: 30px;
-  grid-template-areas: "bioimage bio bio" "job1 job2 job3";
+  grid-template-areas: 'bioimage bio bio' 'job1 job2 job3';
   grid-template-columns: repeat(3, 1fr); }
   .about-info .bio-image {
     grid-area: bioimage;
@@ -225,10 +225,12 @@ main {
         background-color: #e9ca32; }
       .projects .tags .tag.responsive-color {
         background-color: #2889e4; }
-      .projects .tags .tag.bootstrap-color {
+      .projects .tags .tag.redux-color {
         background-color: #563b7e; }
-      .projects .tags .tag.mobile-color {
-        background-color: #0ed0d6; }
+      .projects .tags .tag.react-color {
+        background-color: #48cff8; }
+      .projects .tags .tag.typescript-color {
+        background-color: #0077c6; }
       .projects .tags .tag.jquery-color {
         background-color: #1b75bb; }
       .projects .tags .tag.grid-color {

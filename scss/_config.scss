@@ -9,9 +9,10 @@ $background-opacity: 0.7;
 $scss-color: rgb(191, 64, 128);
 $js-color: #e9ca32;
 $animation-color: #8984f7;
-$responsive-color: rgb(40, 137, 228);
-$bootstrap-color: #563b7e;
-$mobile-color: #0ed0d6;
+$responsive-color: #2889e4;
+$redux-color: #563b7e;
+$react-color: #48cff8;
+$typescript-color: #0077c6;
 $jquery-color: #1b75bb;
 $grid-color: #ec4e1f;
 $gulp-color: #e54849;
@@ -29,7 +30,7 @@ $gulp-color: #e54849;
       background-repeat: no-repeat;
       //sudo-element (don't need to create div.overlay in a top of the body#bg-img)
       &:after {
-        content: ""; //always must inlude 'content' property
+        content: ''; //always must inlude 'content' property
         position: absolute;
         top: 0;
         right: 0;
