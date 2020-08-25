@@ -135,6 +135,10 @@ a {
   color: #fff;
   text-decoration: none;
   outline: none; }
+  a.link {
+    color: #ffd618; }
+    a.link:hover {
+      text-decoration: underline; }
 
 header {
   position: fixed;

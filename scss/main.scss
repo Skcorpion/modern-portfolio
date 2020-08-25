@@ -37,6 +37,14 @@ a {
   color: set-text-color($primary-color);
   text-decoration: none;
   outline: none;
+
+  &.link {
+    color: $secondary-color;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
 }
 
 header {
